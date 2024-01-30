@@ -55,7 +55,7 @@ def get_all_data(url):
 
 def main():
     # Init All Website links
-    all_links = 'https://www.bootlabstech.com'
+    all_links = 'web_url'
 
     # Get all Tags from the webpage source
     get_all_data(all_links)
