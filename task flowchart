@@ -1,0 +1,37 @@
+Start
+|
+|--> main()
+       |
+       |--> Initialize all_links with target URL(s)
+       |
+       |--> For each URL in all_links:
+       |       |
+       |       |--> get_all_data(url)
+       |               |
+       |               |--> get_all_a_tags(url)
+       |               |       |
+       |               |       |--> bs4_contents(url)
+       |               |               |
+       |               |               |--> Request URL
+       |               |               |--> Parse HTML content
+       |               |
+       |               |--> For each <a> tag:
+       |                       |
+       |                       |--> Check if tag has been visited
+       |                       |       |
+       |                       |       |--> Construct full URL
+       |                       |               |
+       |                       |               |--> Check URL format
+       |                       |               |--> Append to visited list
+       |                       |
+       |                       |--> get_content(full_url)
+       |                               |
+       |                               |--> bs4_contents(full_url)
+       |                                       |
+       |                                       |--> Request URL
+       |                                       |--> Parse HTML content
+       |                                       |--> Extract text content
+       |                               |
+       |                               |--> Save content to content.txt
+       |
+       End
